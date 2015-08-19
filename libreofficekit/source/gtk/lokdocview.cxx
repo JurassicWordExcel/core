@@ -1249,7 +1249,9 @@ setEditInThread(gpointer data)
     }
     priv->m_bEdit = bEdit;
     g_signal_emit(pDocView, doc_view_signals[EDIT_CHANGED], 0, bWasEdit);
+    gdk_threads_enter();
     gtk_widget_queue_draw(GTK_WIDGET(pDocView));
+    gdk_threads_leave();
 }
 
 static void
@@ -1305,7 +1307,9 @@ paintTileInThread (gpointer data)
     //create a mapping for it
     buffer.m_mTiles[index].setPixbuf(pPixBuf);
     buffer.m_mTiles[index].valid = true;
+    gdk_threads_enter();
     gtk_widget_queue_draw(GTK_WIDGET(pDocView));
+    gdk_threads_leave();
 }
 
 
