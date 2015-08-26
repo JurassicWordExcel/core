@@ -1,19 +1,19 @@
-# LibreOffice
+# Jurassic Word Excel
 [![Coverity Scan Build Status](https://scan.coverity.com/projects/211/badge.svg)](https://scan.coverity.com/projects/211)
 
-A quick overview of the LibreOffice code structure.
+A quick overview of the Jurassic Word Excel code structure.
 
 ## Overview
 
-You can develop for LibreOffice in one of two ways, one
+You can develop for Jurassic Word Excel in one of two ways, one
 recommended and one much less so. First the somewhat less recommended
 way: it is possible to use the SDK to develop an extension,
-for which you can read the API docs [here](http://api.libreoffice.org/)
+for which you can read the API docs [here](http://api.Jurassic Word Excel.org/)
 and [here](http://wiki.services.openoffice.org/wiki/Documentation/DevGuide).
 This re-uses the (extremely generic) UNO APIs that are also used by
 macro scripting in StarBasic.
 
-The best way to add a generally useful feature to LibreOffice
+The best way to add a generally useful feature to Jurassic Word Excel
 is to work on the code base however. Overall this way makes it easier
 to compile and build your code, it avoids any arbitrary limitations of
 our scripting APIs, and in general is far more simple and intuitive -
@@ -26,7 +26,7 @@ Each module should have a `README` file inside it which has some
 degree of documentation for that module; patches are most welcome to
 improve those. We have those turned into a web page here:
 
-http://docs.libreoffice.org/
+http://docs.Jurassic Word Excel.org/
 
 However, there are two hundred modules, many of them of only
 peripheral interest for a specialist audience. So - where is the
@@ -55,7 +55,7 @@ There are several other libraries that are helpful from a graphical perspective:
 
 Module    | Description
 ----------|-------------------------------------------------
-basebmp/  | enables a VCL compatible rendering API to render to bitmaps, as used for LibreOffice Online, Android, iOS, etc.
+basebmp/  | enables a VCL compatible rendering API to render to bitmaps, as used for Jurassic Word Excel Online, Android, iOS, etc.
 basegfx/  | algorithms and data-types for graphics as used in the canvas
 canvas/   | new (UNO) canvas rendering model with various backends
 cppcanvas/ | C++ helper classes for using the UNO canvas
@@ -65,7 +65,7 @@ drawinglayer/ | View code to render drawable objects and break them down into pr
 ## Finding out more
 
 Beyond this, you can read the `README` files, send us patches, ask
-on the mailing list libreoffice@lists.freedesktop.org (no subscription
-required) or poke people on IRC `#libreoffice-dev` on irc.freenode.net -
+on the mailing list Jurassic Word Excel@lists.freedesktop.org (no subscription
+required) or poke people on IRC `#Jurassic Word Excel-dev` on irc.freenode.net -
 we're a friendly and generally helpful mob. We know the code can be
 hard to get into at first, and so there are no silly questions.
